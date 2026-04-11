@@ -1,0 +1,29 @@
+{
+    "name": "dynasty/toolkit",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "composer/composer": "^2.9",
+        "driftingly/rector-laravel": "^2.3",
+        "larastan/larastan": "^3.9",
+        "laravel/pint": "^1.29",
+        "nunomaduro/phpinsights": "^2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynasty\\Toolkit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dynasty\\Toolkit\\ToolkitServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
